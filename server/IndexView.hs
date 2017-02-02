@@ -11,7 +11,7 @@ build = do
     H.head $ do
       H.title "Tree"
       meta ! httpEquiv "X-UA-Compatible" ! content "IE=edge"
-      meta ! name "viewport" ! content "width=device-width; initial-scale=1.0; user-scalable=no;"
+      meta ! name "viewport" ! content "width=device-width, initial-scale=1.0, user-scalable=no;"
 
       link ! rel "icon" ! sizes "16x16 32x32" ! href "images/favicon.ico"
       meta ! name "msapplication-TileColor" ! content "#FFFFFF"
@@ -20,5 +20,5 @@ build = do
       script ! src "app.js" $ return ()
 
     body $ do
-      script "Elm.Main.fullscreen();"
       H.div ! A.id "content" $ return ()
+      script "Elm.App.embed(document.getElementById('content'));"

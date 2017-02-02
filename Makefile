@@ -8,7 +8,7 @@ server:
 client: client/dist/app.js
 
 client/dist/app.js: client/src/*.elm
-	mkdir -p $(@D) && elm-make client/src/Main.elm --output $@
+	mkdir -p $(@D) && elm-make client/src/App.elm --output $@
 
 .PHONY: serve
 serve:

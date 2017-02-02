@@ -1,10 +1,10 @@
 {
     "version": "1.0.0",
-    "summary": "",
+    "summary": "A tree. As a service.",
     "repository": "https://github.com/rhyskeepence/tree-as-a-service.git",
     "license": "BSD3",
     "source-directories": [
-        "./frontend/src"
+        "client/src"
     ],
     "exposed-modules": [],
     "dependencies": {
