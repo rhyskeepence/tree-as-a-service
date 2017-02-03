@@ -11,9 +11,12 @@ build = do
     H.head $ do
       H.title "Tree"
       meta ! httpEquiv "X-UA-Compatible" ! content "IE=edge"
-      meta ! name "viewport" ! content "width=device-width, initial-scale=1.0, user-scalable=no;"
+      meta ! name "viewport" ! content "width=device-width, initial-scale=1.0, user-scalable=no"
 
       link ! rel "icon" ! sizes "16x16 32x32" ! href "images/favicon.ico"
+      link ! rel "stylesheet" ! href "reset.css"
+
+
       meta ! name "msapplication-TileColor" ! content "#FFFFFF"
       meta ! name "msapplication-TileImage" ! content "images/mstile.png"
       

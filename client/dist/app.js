@@ -8174,11 +8174,6 @@ var _rhyskeepence$tree_as_a_service$State$initialState = {
 	_1: _elm_lang$core$Platform_Cmd$none
 };
 
-var _rhyskeepence$tree_as_a_service$View_ops = _rhyskeepence$tree_as_a_service$View_ops || {};
-_rhyskeepence$tree_as_a_service$View_ops['=>'] = F2(
-	function (v0, v1) {
-		return {ctor: '_Tuple2', _0: v0, _1: v1};
-	});
 var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 	var view = A2(
 		_elm_lang$html$Html$section,
@@ -8187,28 +8182,28 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 			_0: _elm_lang$html$Html_Attributes$style(
 				{
 					ctor: '::',
-					_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'position', 'absolute'),
+					_0: {ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
 					_1: {
 						ctor: '::',
-						_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'top', '32px'),
+						_0: {ctor: '_Tuple2', _0: 'top', _1: '2rem'},
 						_1: {
 							ctor: '::',
-							_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'right', '0'),
+							_0: {ctor: '_Tuple2', _0: 'right', _1: '0'},
 							_1: {
 								ctor: '::',
-								_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'bottom', '0'),
+								_0: {ctor: '_Tuple2', _0: 'bottom', _1: '0'},
 								_1: {
 									ctor: '::',
-									_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'left', '160px'),
+									_0: {ctor: '_Tuple2', _0: 'left', _1: '10rem'},
 									_1: {
 										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'background', '#F5F6F7'),
+										_0: {ctor: '_Tuple2', _0: 'background', _1: '#F5F6F7'},
 										_1: {
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'z-index', '-1'),
+											_0: {ctor: '_Tuple2', _0: 'z-index', _1: '-1'},
 											_1: {
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'overflow', 'hidden'),
+												_0: {ctor: '_Tuple2', _0: 'overflow', _1: 'hidden'},
 												_1: {ctor: '[]'}
 											}
 										}
@@ -8229,8 +8224,12 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 					_0: _elm_lang$html$Html_Attributes$style(
 						{
 							ctor: '::',
-							_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'width', '100%'),
-							_1: {ctor: '[]'}
+							_0: {ctor: '_Tuple2', _0: 'width', _1: '100%'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'margin', _1: '2rem 1rem'},
+								_1: {ctor: '[]'}
+							}
 						}),
 					_1: {ctor: '[]'}
 				},
@@ -8243,12 +8242,8 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 							_0: _elm_lang$html$Html_Attributes$style(
 								{
 									ctor: '::',
-									_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'line-height', '23px'),
-									_1: {
-										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '0'),
-										_1: {ctor: '[]'}
-									}
+									_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
 						},
@@ -8261,18 +8256,14 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 									_0: _elm_lang$html$Html_Attributes$style(
 										{
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-weight', '300'),
+											_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '300'},
 											_1: {
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'color', '#46474F'),
+												_0: {ctor: '_Tuple2', _0: 'font-size', _1: '0.75rem'},
 												_1: {
 													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-size', '11px'),
-													_1: {
-														ctor: '::',
-														_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '0 4px'),
-														_1: {ctor: '[]'}
-													}
+													_0: {ctor: '_Tuple2', _0: 'color', _1: '#46474F'},
+													_1: {ctor: '[]'}
 												}
 											}
 										}),
@@ -8294,15 +8285,11 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 								_0: _elm_lang$html$Html_Attributes$style(
 									{
 										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'line-height', '23px'),
+										_0: {ctor: '_Tuple2', _0: 'border-bottom', _1: '1px solid #D8D8DC'},
 										_1: {
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '0'),
-											_1: {
-												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'border-bottom', '1px solid #D8D8DC'),
-												_1: {ctor: '[]'}
-											}
+											_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+											_1: {ctor: '[]'}
 										}
 									}),
 								_1: {ctor: '[]'}
@@ -8316,19 +8303,11 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 										_0: _elm_lang$html$Html_Attributes$style(
 											{
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-weight', '600'),
+												_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
 												_1: {
 													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'color', '#262629'),
-													_1: {
-														ctor: '::',
-														_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-size', '13px'),
-														_1: {
-															ctor: '::',
-															_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '0 4px'),
-															_1: {ctor: '[]'}
-														}
-													}
+													_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
+													_1: {ctor: '[]'}
 												}
 											}),
 										_1: {ctor: '[]'}
@@ -8340,7 +8319,139 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 									}),
 								_1: {ctor: '[]'}
 							}),
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$tr,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$style(
+										{
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'border-bottom', _1: '1px solid #D8D8DC'},
+											_1: {
+												ctor: '::',
+												_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+												_1: {ctor: '[]'}
+											}
+										}),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$td,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$style(
+												{
+													ctor: '::',
+													_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
+													_1: {
+														ctor: '::',
+														_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
+														_1: {ctor: '[]'}
+													}
+												}),
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('456'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$tr,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$style(
+											{
+												ctor: '::',
+												_0: {ctor: '_Tuple2', _0: 'border-bottom', _1: '1px solid #D8D8DC'},
+												_1: {
+													ctor: '::',
+													_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+													_1: {ctor: '[]'}
+												}
+											}),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$td,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$style(
+													{
+														ctor: '::',
+														_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
+														_1: {
+															ctor: '::',
+															_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
+															_1: {ctor: '[]'}
+														}
+													}),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('789'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$tr,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$style(
+												{
+													ctor: '::',
+													_0: {ctor: '_Tuple2', _0: 'border-bottom', _1: '1px solid #D8D8DC'},
+													_1: {
+														ctor: '::',
+														_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+														_1: {ctor: '[]'}
+													}
+												}),
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$td,
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html_Attributes$style(
+														{
+															ctor: '::',
+															_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
+															_1: {
+																ctor: '::',
+																_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
+																_1: {ctor: '[]'}
+															}
+														}),
+													_1: {ctor: '[]'}
+												},
+												{
+													ctor: '::',
+													_0: _elm_lang$html$Html$text('1234'),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
 					}
 				}),
 			_1: {ctor: '[]'}
@@ -8352,7 +8463,7 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 			_0: _elm_lang$html$Html_Attributes$style(
 				{
 					ctor: '::',
-					_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'min-width', '160px'),
+					_0: {ctor: '_Tuple2', _0: 'min-width', _1: '10rem'},
 					_1: {ctor: '[]'}
 				}),
 			_1: {ctor: '[]'}
@@ -8366,34 +8477,34 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 					_0: _elm_lang$html$Html_Attributes$style(
 						{
 							ctor: '::',
-							_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'position', 'absolute'),
+							_0: {ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
 							_1: {
 								ctor: '::',
-								_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'top', '32px'),
+								_0: {ctor: '_Tuple2', _0: 'top', _1: '2rem'},
 								_1: {
 									ctor: '::',
-									_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'left', '0'),
+									_0: {ctor: '_Tuple2', _0: 'left', _1: '0'},
 									_1: {
 										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'bottom', '0'),
+										_0: {ctor: '_Tuple2', _0: 'bottom', _1: '0'},
 										_1: {
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'overflow', 'hidden'),
+											_0: {ctor: '_Tuple2', _0: 'overflow', _1: 'hidden'},
 											_1: {
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'width', '160px'),
+												_0: {ctor: '_Tuple2', _0: 'width', _1: '10rem'},
 												_1: {
 													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'z-index', '3'),
+													_0: {ctor: '_Tuple2', _0: 'z-index', _1: '3'},
 													_1: {
 														ctor: '::',
-														_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'color', '#262629'),
+														_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
 														_1: {
 															ctor: '::',
-															_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'background-color', '#FFF'),
+															_0: {ctor: '_Tuple2', _0: 'background-color', _1: '#FFF'},
 															_1: {
 																ctor: '::',
-																_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'box-shadow', '0 0 4px 0 #9696A3'),
+																_0: {ctor: '_Tuple2', _0: 'box-shadow', _1: '0 0 4px 0 #9696A3'},
 																_1: {ctor: '[]'}
 															}
 														}
@@ -8416,13 +8527,13 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 							_0: _elm_lang$html$Html_Attributes$style(
 								{
 									ctor: '::',
-									_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'list-style-type', 'none'),
+									_0: {ctor: '_Tuple2', _0: 'list-style-type', _1: 'none'},
 									_1: {
 										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding-left', '0'),
+										_0: {ctor: '_Tuple2', _0: 'padding-left', _1: '0'},
 										_1: {
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'margin', '28px 0 16px 10px'),
+											_0: {ctor: '_Tuple2', _0: 'margin', _1: '2rem 1rem'},
 											_1: {ctor: '[]'}
 										}
 									}
@@ -8438,38 +8549,14 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 									_0: _elm_lang$html$Html_Attributes$style(
 										{
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'text-transform', 'capitalize'),
+											_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
 											_1: {
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-weight', '600'),
+												_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
 												_1: {
 													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'color', '#262629'),
-													_1: {
-														ctor: '::',
-														_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '4px 0 3px'),
-														_1: {
-															ctor: '::',
-															_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'margin', '0'),
-															_1: {
-																ctor: '::',
-																_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-size', '13px'),
-																_1: {
-																	ctor: '::',
-																	_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'line-height', '20px'),
-																	_1: {
-																		ctor: '::',
-																		_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'white-space', 'nowrap'),
-																		_1: {
-																			ctor: '::',
-																			_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'overflow', 'hidden'),
-																			_1: {ctor: '[]'}
-																		}
-																	}
-																}
-															}
-														}
-													}
+													_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+													_1: {ctor: '[]'}
 												}
 											}
 										}),
@@ -8489,38 +8576,14 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 										_0: _elm_lang$html$Html_Attributes$style(
 											{
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'text-transform', 'capitalize'),
+												_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
 												_1: {
 													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-weight', '600'),
+													_0: {ctor: '_Tuple2', _0: 'color', _1: '#262629'},
 													_1: {
 														ctor: '::',
-														_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'color', '#262629'),
-														_1: {
-															ctor: '::',
-															_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '4px 0 3px'),
-															_1: {
-																ctor: '::',
-																_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'margin', '0'),
-																_1: {
-																	ctor: '::',
-																	_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-size', '13px'),
-																	_1: {
-																		ctor: '::',
-																		_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'line-height', '20px'),
-																		_1: {
-																			ctor: '::',
-																			_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'white-space', 'nowrap'),
-																			_1: {
-																				ctor: '::',
-																				_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'overflow', 'hidden'),
-																				_1: {ctor: '[]'}
-																			}
-																		}
-																	}
-																}
-															}
-														}
+														_0: {ctor: '_Tuple2', _0: 'line-height', _1: '2rem'},
+														_1: {ctor: '[]'}
 													}
 												}
 											}),
@@ -8545,31 +8608,31 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 			_0: _elm_lang$html$Html_Attributes$style(
 				{
 					ctor: '::',
-					_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'position', 'absolute'),
+					_0: {ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
 					_1: {
 						ctor: '::',
-						_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'top', '0'),
+						_0: {ctor: '_Tuple2', _0: 'top', _1: '0'},
 						_1: {
 							ctor: '::',
-							_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'right', '0'),
+							_0: {ctor: '_Tuple2', _0: 'right', _1: '0'},
 							_1: {
 								ctor: '::',
-								_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'left', '0'),
+								_0: {ctor: '_Tuple2', _0: 'left', _1: '0'},
 								_1: {
 									ctor: '::',
-									_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'height', '32px'),
+									_0: {ctor: '_Tuple2', _0: 'height', _1: '2rem'},
 									_1: {
 										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'display', 'flex'),
+										_0: {ctor: '_Tuple2', _0: 'display', _1: 'flex'},
 										_1: {
 											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'box-shadow', '0 1px 3px 0 rgba(38,38,41,.4'),
+											_0: {ctor: '_Tuple2', _0: 'box-shadow', _1: '0 1px 3px 0 rgba(38,38,41,.4)'},
 											_1: {
 												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'background', '#262629'),
+												_0: {ctor: '_Tuple2', _0: 'background', _1: '#262629'},
 												_1: {
 													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'color', '#F5F6F7'),
+													_0: {ctor: '_Tuple2', _0: 'color', _1: '#F5F6F7'},
 													_1: {ctor: '[]'}
 												}
 											}
@@ -8591,41 +8654,17 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 					_0: _elm_lang$html$Html_Attributes$style(
 						{
 							ctor: '::',
-							_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'display', 'inline-block'),
+							_0: {ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
 							_1: {
 								ctor: '::',
-								_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'margin', '6px 8px 4px 0'),
+								_0: {ctor: '_Tuple2', _0: 'margin', _1: '0.5rem 1rem'},
 								_1: {
 									ctor: '::',
-									_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'padding', '0 5px 1px'),
+									_0: {ctor: '_Tuple2', _0: 'border', _1: '0 solid transparent'},
 									_1: {
 										ctor: '::',
-										_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'border', '0 solid transparent'),
-										_1: {
-											ctor: '::',
-											_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-weight', '600'),
-											_1: {
-												ctor: '::',
-												_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'white-space', 'nowrap'),
-												_1: {
-													ctor: '::',
-													_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'overflow', 'hidden'),
-													_1: {
-														ctor: '::',
-														_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'text-overflow', 'ellipsis'),
-														_1: {
-															ctor: '::',
-															_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'height', '27px'),
-															_1: {
-																ctor: '::',
-																_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'vertical-align', 'bottom'),
-																_1: {ctor: '[]'}
-															}
-														}
-													}
-												}
-											}
-										}
+										_0: {ctor: '_Tuple2', _0: 'font-weight', _1: '600'},
+										_1: {ctor: '[]'}
 									}
 								}
 							}
@@ -8654,24 +8693,7 @@ var _rhyskeepence$tree_as_a_service$View$rootView = function (model) {
 	};
 	return A2(
 		_elm_lang$html$Html$div,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$style(
-				{
-					ctor: '::',
-					_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-family', 'Helvetica, Arial, sans-serif'),
-					_1: {
-						ctor: '::',
-						_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'font-size', '12px'),
-						_1: {
-							ctor: '::',
-							_0: A2(_rhyskeepence$tree_as_a_service$View_ops['=>'], 'line-height', '1.6'),
-							_1: {ctor: '[]'}
-						}
-					}
-				}),
-			_1: {ctor: '[]'}
-		},
+		{ctor: '[]'},
 		body);
 };
 

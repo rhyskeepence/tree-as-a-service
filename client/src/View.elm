@@ -7,9 +7,6 @@ import Types exposing (..)
 --import SmallData.View
 --import Tree.View
 
-(=>) = (,)
-
-
 rootView : Model -> Html Action
 rootView model =
   let
@@ -23,42 +20,57 @@ rootView model =
 
     top = 
       header 
-        [ style [ "position" => "absolute", "top" => "0", "right" => "0", "left" => "0", "height" => "32px", "display" => "flex", "box-shadow" => "0 1px 3px 0 rgba(38,38,41,.4", "background" => "#262629", "color" => "#F5F6F7"] ]
+        [ style [ ( "position", "absolute" ), ( "top", "0" ), ( "right", "0" ), ( "left", "0" ), ( "height", "2rem" ), ( "display", "flex" ), ("box-shadow", "0 1px 3px 0 rgba(38,38,41,.4)"), ( "background", "#262629" ), ( "color", "#F5F6F7" )] ]
         [
           div 
-            [ style [ "display" => "inline-block", "margin" => "6px 8px 4px 0", "padding" => "0 5px 1px", "border" => "0 solid transparent", "font-weight" => "600", "white-space" => "nowrap", "overflow" => "hidden", "text-overflow" => "ellipsis", "height" => "27px", "vertical-align" => "bottom" ] ]
+            [ style [ ( "display", "inline-block" ), ( "margin", "0.5rem 1rem" ), ( "border", "0 solid transparent" ), ( "font-weight", "600" ) ] ]
             [ text "Tree" ]
           ]
         
     leftnav =
       nav 
-        [ style [ "min-width" => "160px"] ]
+        [ style [ ( "min-width", "10rem" )] ]
         [ div 
-            [ style [ "position" => "absolute", "top" => "32px", "left" => "0", "bottom" => "0", "overflow" => "hidden", "width" => "160px", "z-index" => "3", "color" => "#262629", "background-color" => "#FFF", "box-shadow" => "0 0 4px 0 #9696A3" ] ]
+            [ style [ ( "position", "absolute" ), ( "top", "2rem" ), ( "left", "0" ), ( "bottom", "0" ), ( "overflow", "hidden" ), ( "width", "10rem" ), ( "z-index", "3" ), ( "color", "#262629" ), ( "background-color", "#FFF" ), ( "box-shadow", "0 0 4px 0 #9696A3" ) ] ]
             [ ul 
-                [ style [ "list-style-type" => "none", "padding-left" => "0", "margin" => "28px 0 16px 10px" ] ]
+                [ style [ ( "list-style-type", "none" ), ( "padding-left", "0" ), ( "margin", "2rem 1rem" ) ] ]
                 [
-                  li [ style [ "text-transform" => "capitalize", "font-weight" => "600", "color" => "#262629", "padding" => "4px 0 3px", "margin" => "0", "font-size" => "13px", "line-height" => "20px", "white-space" => "nowrap", "overflow" => "hidden"] ] [ text "Tree" ],
-                  li [ style [ "text-transform" => "capitalize", "font-weight" => "600", "color" => "#262629", "padding" => "4px 0 3px", "margin" => "0", "font-size" => "13px", "line-height" => "20px", "white-space" => "nowrap", "overflow" => "hidden"] ] [ text "Small Data" ]
+                  li [ style [ ( "font-weight", "600" ), ( "color", "#262629" ), ( "line-height", "2rem" ) ] ] [ text "Tree" ],
+                  li [ style [ ( "font-weight", "600" ), ( "color", "#262629" ), ( "line-height", "2rem" ) ] ] [ text "Small Data" ]
                 ]
               ]
           ]
 
     view = 
       section 
-        [ style [ "position" => "absolute", "top" => "32px", "right" => "0", "bottom" => "0", "left" => "160px", "background" => "#F5F6F7", "z-index" => "-1", "overflow" => "hidden" ] ]
+        [ style [ ( "position", "absolute" ), ( "top", "2rem" ), ( "right", "0" ), ( "bottom", "0" ), ( "left", "10rem" ), ( "background", "#F5F6F7" ), ( "z-index", "-1" ), ( "overflow", "hidden" ) ] ]
         [
           table 
-            [ style [ "width" => "100%" ]]
+            [ style [ ( "width", "100%" ), ( "margin", "2rem 1rem" ) ]]
             [
-              tr [ style [ "line-height" => "23px", "padding" => "0"]] [
+              tr [ style [ ( "line-height", "2rem" ) ]] [
                 th
-                  [ style [ "font-weight" => "300", "color" => "#46474F", "font-size" => "11px", "padding" => "0 4px" ] ]
+                  [ style [ ( "font-weight", "300" ), ( "font-size", "0.75rem" ), ( "color", "#46474F" ) ] ]
                   [ text "Code" ]
                 ],
-              tr [ style [ "line-height" => "23px", "padding" => "0", "border-bottom" => "1px solid #D8D8DC"]] [
+              tr [ style [  ( "border-bottom", "1px solid #D8D8DC" ), ( "line-height", "2rem" ) ]] [
                 td
-                  [ style [ "font-weight" => "600", "color" => "#262629", "font-size" => "13px", "padding" => "0 4px" ] ]
+                  [ style [ ( "font-weight", "600" ), ( "color", "#262629" ) ] ]
+                  [ text "1234" ]
+                ],
+              tr [ style [  ( "border-bottom", "1px solid #D8D8DC" ), ( "line-height", "2rem" ) ]] [
+                td
+                  [ style [ ( "font-weight", "600" ), ( "color", "#262629" ) ] ]
+                  [ text "456" ]
+                ],
+              tr [ style [  ( "border-bottom", "1px solid #D8D8DC" ), ( "line-height", "2rem" ) ]] [
+                td
+                  [ style [ ( "font-weight", "600" ), ( "color", "#262629" ) ] ]
+                  [ text "789" ]
+                ],
+              tr [ style [  ( "border-bottom", "1px solid #D8D8DC" ), ( "line-height", "2rem" ) ]] [
+                td
+                  [ style [ ( "font-weight", "600" ), ( "color", "#262629" ) ] ]
                   [ text "1234" ]
                 ]
             ]
@@ -72,8 +84,5 @@ rootView model =
       ]
 
   in
-    div [
-      style [ "font-family" => "Helvetica, Arial, sans-serif", "font-size" => "12px", "line-height" => "1.6" ]
-    ] 
-    body 
+    div [] body
 
